@@ -161,3 +161,4 @@ E:\Projects\MyProjects\GP-API\GP-API\obj\Debug\net8.0\refint\GP-API.dll
 E:\Projects\MyProjects\GP-API\GP-API\obj\Debug\net8.0\GP-API.pdb
 E:\Projects\MyProjects\GP-API\GP-API\obj\Debug\net8.0\GP-API.genruntimeconfig.cache
 E:\Projects\MyProjects\GP-API\GP-API\obj\Debug\net8.0\ref\GP-API.dll
+E:\Projects\MyProjects\GP-API\GP-API\bin\Debug\net8.0\GP-API.staticwebassets.runtime.json
