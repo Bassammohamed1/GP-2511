@@ -9,4 +9,4 @@ RUN dotnet publish -c release -o output
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /src/output .
-ENTRYPOINT ["dotnet", "GP-API.dll"]
+ENTRYPOINT ["dotnet", "GP_API.dll"]
