@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    tools:context=".ui.test.TestResultActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileIV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/circularImage" />
+
+        <TextView
+            android:id="@+id/userNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/font"
+            android:text="User Name"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profileIV"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/backArrowIV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:rotationY="180"
+            android:src="@drawable/back_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <TextView
+            android:id="@+id/testName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text="The Result"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+       />
+
+        <TextView
+            android:id="@+id/testType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/font"
+            android:text="Dys"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+      />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/font"
+            android:text="Dys"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+    />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good"
+            android:fontFamily="@font/pubble"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:padding="20dp"
+            android:background="@drawable/rounded_bg"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageBottom"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/profile_down_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:stretchColumns="0"
+        app:layout_constraintBottom_toTopOf="@+id/imageBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <TableRow
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_btn">
+
+            <TextView
+                android:id="@+id/q1"
+                android:layout_column="0"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/font"
+                android:padding="8dp"
+                android:text="Q1"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/rq1"
+                android:layout_column="2"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/font"
+                android:padding="8dp"
+                android:text="0/2"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_btn">
+
+            <TextView
+                android:id="@+id/q2"
+                android:layout_column="0"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/font"
+                android:padding="8dp"
+                android:text="Q2"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/rq2"
+                android:layout_column="2"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/font"
+                android:padding="8dp"
+                android:text="0/2"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_btn">
+
+            <TextView
+                android:id="@+id/q3"
+                android:layout_column="0"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/font"
+                android:padding="8dp"
+                android:text="Q3"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/rq3"
+                android:layout_column="2"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/font"
+                android:padding="8dp"
+                android:text="0/2"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_btn">
+
+            <TextView
+                android:id="@+id/q4"
+                android:layout_column="0"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/font"
+                android:padding="8dp"
+                android:text="Q4"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/rq4"
+                android:layout_column="2"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/font"
+                android:padding="8dp"
+                android:text="0/2"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_radio_btn">
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_column="0"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/font"
+                android:padding="8dp"
+                android:text="Total"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/rTotal"
+                android:layout_column="2"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/font"
+                android:padding="8dp"
+                android:text="0/8"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

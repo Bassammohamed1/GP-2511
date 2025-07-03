@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.test.dyscalculiaTest.ComparisonFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/biggerThan"
+                android:text="b"
+                android:fontFamily="@font/font"
+                android:textSize="30sp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/option_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                tools:ignore="HardcodedText" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/equal"
+                android:text="="
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/font"
+                android:layout_weight="1"
+                android:background="@drawable/option_btn"
+                android:textSize="30sp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/smallerThan"
+                android:text="s"
+                android:fontFamily="@font/font"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/option_btn"
+                android:textSize="30sp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/questionLo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/options">
+            <TextView
+                android:id="@+id/firstNumber"
+                android:text="1555"
+                android:fontFamily="@font/font"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sign"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/font"
+                android:background="@drawable/option_btn"
+                android:text=""
+                android:textSize="30sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <TextView
+                android:id="@+id/secondNumber"
+                android:text="1555"
+                android:fontFamily="@font/font"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/math_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/celeprationAnim"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="false"
+            app:lottie_fileName="celeprate_anim.json"
+            app:lottie_speed="1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

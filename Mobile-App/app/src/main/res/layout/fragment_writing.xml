@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.report.WritingFragment">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:id="@+id/frameLo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <TextView
+            android:id="@+id/writingRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="writing Rate : 56%"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/level"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level : Good"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/latestDayOfWriting"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="Latest Day Of Writign  : 2/2/2025"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/writingDays"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="3 days of Writing"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font"
+            android:textSize="18sp"
+            />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

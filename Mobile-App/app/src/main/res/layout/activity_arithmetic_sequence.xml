@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    tools:context=".ui.math.ArithmeticSequenceActivity">
+    <ImageView
+        android:id="@+id/backArrowIV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backArrowIV">
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8888"
+            android:gravity="center"
+            android:fontFamily="@font/font"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8887"
+            android:gravity="center"
+            android:fontFamily="@font/font"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8888"
+            android:gravity="center"
+            android:fontFamily="@font/font"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/firstHint"
+            android:layout_width="75dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="60dp">
+            <EditText
+                android:id="@+id/fourth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:background="@color/white"
+                android:inputType="number"
+                android:maxLength="3"
+                android:fontFamily="@font/font"
+                android:textSize="25sp"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1">
+        <TextView
+            android:id="@+id/fivth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:gravity="center"
+            android:fontFamily="@font/font"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/secondHint"
+            android:layout_width="75dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="60dp">
+            <EditText
+                android:id="@+id/sixth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text=""
+                android:background="@color/white"
+                android:inputType="number"
+                android:maxLength="3"
+                android:fontFamily="@font/font"
+                android:textSize="25sp"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/seventh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13"
+            android:gravity="center"
+            android:fontFamily="@font/font"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/math_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="done"
+        android:fontFamily="@font/font"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/celeprationAnim"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="celeprate_anim.json"
+        app:lottie_speed="1" />
+
+    <ImageView
+        android:id="@+id/changeQues"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/change_ques"
+        app:layout_constraintBottom_toBottomOf="@+id/backArrowIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backArrowIV" />
+</androidx.constraintlayout.widget.ConstraintLayout>

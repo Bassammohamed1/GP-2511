@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.test.dyscalculiaTest.AddingFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:id="@+id/linearLayout2"
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:orientation="vertical"
+           app:layout_constraintBottom_toTopOf="@+id/image"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.495"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+           <TextView
+               android:id="@+id/firstNumber"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:fontFamily="@font/font"
+               android:text="100"
+               android:textColor="@color/black"
+               android:textSize="45sp" />
+
+           <ImageView
+               android:id="@+id/sign"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_gravity="right"
+               android:layout_marginRight="50dp"
+               android:src="@drawable/back_arrow"
+               tools:ignore="RtlHardcoded" />
+
+           <TextView
+               android:id="@+id/secondNumber"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:fontFamily="@font/font"
+               android:text="99"
+               android:textColor="@color/black"
+               android:textSize="45sp" />
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:layout_marginTop="30dp"
+               android:background="@color/black" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/resultAdapter"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layoutDirection="rtl"
+               app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+               tools:itemCount="2"
+               tools:listitem="@layout/result_box" />
+       </LinearLayout>
+       <ImageView
+           android:id="@+id/image"
+           android:layout_width="match_parent"
+           android:layout_height="300dp"
+           android:src="@drawable/math_img"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

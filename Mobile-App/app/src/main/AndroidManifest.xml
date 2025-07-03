@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES"
+        android:maxSdkVersion="32"
+        tools:ignore="SelectedPhotoAccess" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        android:minSdkVersion="29" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/brain"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/brain"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Possible"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.profile.children.testsForChildren.ToDoTestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.report.ReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.specialist.tests.TestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.test.dysgraphiaTest.SentenceMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.test.dysgraphiaTest.DysgraphiaTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.test.dyscalculiaTest.DyscalculiaTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.specialist.tests.SettingTestActivity"
+            android:exported="false"
+            android:theme="@style/mat" />
+        <activity
+            android:name=".ui.specialist.tests.TestTypesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.specialist.SpecialistMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.splach.AnimationActivity"
+            android:exported="false" /> <!-- أنشطة التسجيل والولوج -->
+        <activity
+            android:name=".ui.signLogin.signUp.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.test.TestResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.signLogin.Login.LoginActivity"
+            android:exported="false" /> <!-- أنشطة الملف الشخصي والأطفال -->
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.profileManage.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.children.Children"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.children.addChild.AddChildActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.children.testsForChildren.ChildrenTests"
+            android:exported="false" /> <!-- أنشطة الرياضيات -->
+        <activity
+            android:name=".ui.math.MainMathActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.math.AddingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.math.ComparisonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.math.ArithmeticSequenceActivity"
+            android:exported="false" /> <!-- أنشطة القراءة -->
+        <activity
+            android:name=".ui.reading.ReadingMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.reading.ReadTextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.reading.ReadCustomTextActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.reading.ReadingResult"
+            android:exported="false" /> <!-- أنشطة الرسم والتتبع -->
+        <activity
+            android:name=".ui.drawing.DrawingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.tracing.TracingActivity"
+            android:exported="false" /> <!-- أنشطة أخرى -->
+        <activity
+            android:name=".ui.LettersNumbersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.splach.SplachActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

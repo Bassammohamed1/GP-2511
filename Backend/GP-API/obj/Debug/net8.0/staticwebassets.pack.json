@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\My Projects\\GP-API\\GP-API\\wwwroot\\files\\uploads\\images\\cd622e60-9d84-4fbe-bd49-a39afb08456e.jpg",
+      "PackagePath": "staticwebassets\\files\\uploads\\images\\cd622e60-9d84-4fbe-bd49-a39afb08456e.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GP-API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GP-API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GP-API.props",
+      "PackagePath": "build\\GP-API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GP-API.props",
+      "PackagePath": "buildMultiTargeting\\GP-API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GP-API.props",
+      "PackagePath": "buildTransitive\\GP-API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

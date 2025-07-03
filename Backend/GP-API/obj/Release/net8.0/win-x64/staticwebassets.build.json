@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "I66wWnlrkrhTChi978nQJhgzBy4xOfBDoJHZyYy/vq0=",
+  "Source": "GP-API",
+  "BasePath": "_content/GP-API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GP-API\\wwwroot",
+      "Source": "GP-API",
+      "ContentRoot": "E:\\Projects\\MyProjects\\GP-API\\GP-API\\wwwroot\\",
+      "BasePath": "_content/GP-API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Projects\\MyProjects\\GP-API\\GP-API\\wwwroot\\files\\uploads\\images\\2mojqz2j.nnl.jpg",
+      "SourceId": "GP-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Projects\\MyProjects\\GP-API\\GP-API\\wwwroot\\",
+      "BasePath": "_content/GP-API",
+      "RelativePath": "files/uploads/images/2mojqz2j.nnl.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\uploads\\images\\2mojqz2j.nnl.jpg"
+    }
+  ]
+}

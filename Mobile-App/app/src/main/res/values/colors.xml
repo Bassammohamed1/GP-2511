@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="error">#DF487B</color>
+    <color name="correct">#02E8D2</color>
+
+
+
+    <color name="des">#E6FF00</color>
+    <color name="cal">#03FBE6</color>
+    <color name="gra">#F200B6</color>
+
+</resources>

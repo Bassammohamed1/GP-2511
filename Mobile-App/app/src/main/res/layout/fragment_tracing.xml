@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/beginner_draw_fragment_container"
+    tools:context=".ui.tracing.TracingFragment"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/frameDrawer"
+            app:layout_constraintHorizontal_bias="0.531"
+            app:layout_constraintStart_toStartOf="@+id/frameDrawer"
+            app:layout_constraintTop_toBottomOf="@+id/header">
+
+            <TextView
+                android:id="@+id/drawHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="Draw"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/font"
+                android:text="letter"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/letterName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frame_border"
+                android:fontFamily="@font/font"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="3dp"
+                android:text="A"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <com.example.possible.ui.tracing.TracingView
+            android:id="@+id/TracingView"
+            android:layout_marginStart="50dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:src="#0CBD5151"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

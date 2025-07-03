@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.math.ComparisonActivity"
+    android:layoutDirection="ltr"
+    android:background="@drawable/activity_bg">
+    <ImageView
+        android:id="@+id/backArrowIV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backArrowIV">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/biggerThan"
+            android:text="b"
+            android:fontFamily="@font/font"
+            android:textSize="30sp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/option_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            tools:ignore="HardcodedText" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/equal"
+            android:text="="
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/font"
+            android:layout_weight="1"
+            android:background="@drawable/option_btn"
+            android:textSize="30sp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/smallerThan"
+            android:text="s"
+            android:fontFamily="@font/font"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/option_btn"
+            android:textSize="30sp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/questionLo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/options">
+        <TextView
+            android:id="@+id/firstNumber"
+            android:text="1555"
+            android:fontFamily="@font/font"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sign"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/font"
+            android:background="@drawable/option_btn"
+            android:text=""
+            android:textSize="30sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <TextView
+            android:id="@+id/secondNumber"
+            android:text="1555"
+            android:fontFamily="@font/font"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/math_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="done"
+        android:background="@drawable/option_btn"
+        android:textSize="30sp"
+        android:fontFamily="@font/font"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/celeprationAnim"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="celeprate_anim.json"
+        app:lottie_speed="1" />
+
+    <ImageView
+        android:id="@+id/changeQues"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/change_ques"
+        app:layout_constraintBottom_toBottomOf="@+id/backArrowIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backArrowIV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".ui.reading.ReadCustomTextActivity"
+    android:background="@drawable/activity_bg">
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/backArrowIV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/back_arrow"/>
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/text_img_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backArrowIV" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/container"
+        app:layout_constraintTop_toBottomOf="@+id/background">
+
+        <TextView
+            android:id="@+id/readingText"
+            android:background="@drawable/input_border"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:padding="22dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/font"
+            tools:ignore="VisualLintLongText" />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layoutDirection="ltr"
+        android:id="@+id/container"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hintCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:backgroundTint="#FD7C94"
+            app:cardCornerRadius="25sp"
+      >
+
+            <EditText
+                android:id="@+id/inputField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_border"
+                android:gravity="center"
+                android:hint="Please enter text to read"
+                android:padding="20dp"
+                android:fontFamily="@font/font"
+                android:textColorHint="#AEFFFFFF" />
+
+            <ImageView
+                android:id="@+id/recordSignals"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/recording_signals"
+                android:visibility="gone"
+               />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+        android:id="@+id/recordBtn"
+            android:visibility="gone"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/is_not_recording"
+        android:clickable="true"
+        android:padding="10dp"
+        android:src="@drawable/voice_icon"
+        app:tint="@color/black"
+        tools:ignore="SpeakableTextPresentCheck" />
+        <ImageView
+            android:id="@+id/goBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/is_not_recording"
+            android:clickable="true"
+            android:padding="15dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/go"
+            app:tint="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

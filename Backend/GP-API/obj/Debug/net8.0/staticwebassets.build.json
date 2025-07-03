@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "4TSGgKs/YYtRqFZngz9opfQO+C0OOl6C7Qobjyf5g5k=",
+  "Source": "GP-API",
+  "BasePath": "_content/GP-API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GP-API\\wwwroot",
+      "Source": "GP-API",
+      "ContentRoot": "E:\\My Projects\\GP-API\\GP-API\\wwwroot\\",
+      "BasePath": "_content/GP-API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\My Projects\\GP-API\\GP-API\\wwwroot\\files\\uploads\\images\\cd622e60-9d84-4fbe-bd49-a39afb08456e.jpg",
+      "SourceId": "GP-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\My Projects\\GP-API\\GP-API\\wwwroot\\",
+      "BasePath": "_content/GP-API",
+      "RelativePath": "files/uploads/images/cd622e60-9d84-4fbe-bd49-a39afb08456e#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "psvcuuc57b",
+      "Integrity": "+UE40ovB8zIIN7RyH2vE+2ckWD6gpw0W5ak1fiGsiHQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\uploads\\images\\cd622e60-9d84-4fbe-bd49-a39afb08456e.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "files/uploads/images/cd622e60-9d84-4fbe-bd49-a39afb08456e.jpg",
+      "AssetFile": "E:\\My Projects\\GP-API\\GP-API\\wwwroot\\files\\uploads\\images\\cd622e60-9d84-4fbe-bd49-a39afb08456e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+UE40ovB8zIIN7RyH2vE+2ckWD6gpw0W5ak1fiGsiHQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Sep 2024 16:05:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+UE40ovB8zIIN7RyH2vE+2ckWD6gpw0W5ak1fiGsiHQ="
+        }
+      ]
+    },
+    {
+      "Route": "files/uploads/images/cd622e60-9d84-4fbe-bd49-a39afb08456e.psvcuuc57b.jpg",
+      "AssetFile": "E:\\My Projects\\GP-API\\GP-API\\wwwroot\\files\\uploads\\images\\cd622e60-9d84-4fbe-bd49-a39afb08456e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+UE40ovB8zIIN7RyH2vE+2ckWD6gpw0W5ak1fiGsiHQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Sep 2024 16:05:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "psvcuuc57b"
+        },
+        {
+          "Name": "label",
+          "Value": "files/uploads/images/cd622e60-9d84-4fbe-bd49-a39afb08456e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+UE40ovB8zIIN7RyH2vE+2ckWD6gpw0W5ak1fiGsiHQ="
+        }
+      ]
+    }
+  ]
+}

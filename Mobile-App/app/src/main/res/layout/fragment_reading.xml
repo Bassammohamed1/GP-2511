@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.report.ReadingFragment">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:id="@+id/frameLo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <TextView
+            android:id="@+id/readingRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reading Rate : 56%"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/level"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level : Good"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/latestDayOfReading"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="Latest Day Of Reading  : 2/2/2025"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/readingDays"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="3 days of reading"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font"
+            android:textSize="18sp"
+            />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

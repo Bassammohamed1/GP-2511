@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.profile.children.testsForChildren.TestsDoneFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/test_item"/>
+
+    <TextView
+        android:id="@+id/hint"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:textAppearance="@style/CustomSelectedTextAppearance"
+        android:text="There are no tests Done yet"
+        android:gravity="center"
+        android:layout_margin="30sp"
+        android:layout_height="match_parent"/>
+</FrameLayout>

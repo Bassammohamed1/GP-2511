@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/success_dialog_bg"
+    android:backgroundTint="#1E1E2E"
+    tools:ignore="RtlSymmetry">
+
+    <LinearLayout
+        android:id="@+id/childCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileImage"
+            android:layout_width="70dp"
+            app:shapeAppearanceOverlay="@style/circularImage"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:strokeWidth="2dp"
+            android:padding="5dp" app:strokeColor="#BAE6E2"
+            android:layout_height="70dp"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Belal"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/font"
+            android:textColor="@color/correct"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/cal"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/childCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/childCard"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

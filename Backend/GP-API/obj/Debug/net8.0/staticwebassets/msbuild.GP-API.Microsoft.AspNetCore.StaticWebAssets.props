@@ -1,0 +1,22 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\uploads\images\cd622e60-9d84-4fbe-bd49-a39afb08456e.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>GP-API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GP-API</BasePath>
+      <RelativePath>files/uploads/images/cd622e60-9d84-4fbe-bd49-a39afb08456e.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>psvcuuc57b</Fingerprint>
+      <Integrity>+UE40ovB8zIIN7RyH2vE+2ckWD6gpw0W5ak1fiGsiHQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\uploads\images\cd622e60-9d84-4fbe-bd49-a39afb08456e.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

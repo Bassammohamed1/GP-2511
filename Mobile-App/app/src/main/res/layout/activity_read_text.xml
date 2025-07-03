@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.reading.ReadTextActivity"
+    android:background="@drawable/activity_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/theMainView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/backArrowIV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/back_arrow"/>
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/text_img_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backArrowIV" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/hintCard"
+        app:layout_constraintTop_toBottomOf="@+id/background">
+
+        <TextView
+            android:id="@+id/actualText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="22dp"
+            android:text="Dyslexia is not an illness or a disability to be ashamed of it is a learning difference It impacts the way people process language particularly when it comes to reading writing and spelling"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/font"
+            tools:ignore="VisualLintLongText" />
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/hintCard"
+        app:cardCornerRadius="25sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:backgroundTint="#FD7C94"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/recordBtn"
+        >
+        <LinearLayout
+            android:id="@+id/hint"
+            android:background="@drawable/input_border"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layoutDirection="ltr"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/information_icon"
+                    app:tint="@color/white" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click to record"
+                    android:fontFamily="@font/font"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                   />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="and read, click again when you finished"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+               />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/recordSignals"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/recording_signals"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/recordBtn"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/recordBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/is_not_recording"
+        android:clickable="true"
+        android:padding="10dp"
+        android:src="@drawable/voice_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/hintCard"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hintCard"
+        app:tint="@color/black"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dummyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/hintText"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="#1E1E2E"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="Choose Text To read"
+            android:textSize="20dp"
+            android:fontFamily="@font/pubble"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hintText"
+            tools:itemCount="15"
+            tools:listitem="@layout/chosen_text_card"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
